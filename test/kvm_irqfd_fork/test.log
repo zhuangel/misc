@@ -1,0 +1,104 @@
+################ compile and run case
+
+[root@TENCENT64 alexyonghe]# gcc kvm_irqfd_fork.c -o kvm_irqfd_fork
+[root@TENCENT64 alexyonghe]# ./kvm_irqfd_fork 
+sleep 10 seconds to wait backgroud VM create
+idx 900 min 721508 max 16658968 avg 3469325
+idx 911 min 722046 max 15848028 avg 3480011
+idx 906 min 715710 max 15942626 avg 2970363
+idx 918 min 714864 max 17174584 avg 3252262
+idx 914 min 734818 max 15804874 avg 2185759
+idx 905 min 731236 max 15905266 avg 3057414
+idx 903 min 732602 max 16032684 avg 3409670
+idx 901 min 730914 max 16316574 avg 3196556
+idx 904 min 735022 max 16848670 avg 3559714
+idx 917 min 744138 max 15846118 avg 3415387
+idx 909 min 716168 max 15858106 avg 2896714
+idx 908 min 724302 max 15292918 avg 4179841
+idx 913 min 723260 max 16796206 avg 3126408
+idx 916 min 721536 max 19815522 avg 3923121
+idx 915 min 707346 max 16640608 avg 3861987
+idx 910 min 719320 max 15886768 avg 3853523
+idx 902 min 728658 max 16123634 avg 4018401
+idx 907 min 740474 max 15288642 avg 3929325
+idx 919 min 721770 max 19034690 avg 4256093
+idx 912 min 733918 max 15933292 avg 4334999
+[root@TENCENT64 alexyonghe]
+
+
+
+
+################ trace from another shell
+
+[root@TENCENT64 ~]# /usr/share/bcc/tools/funclatency irq_bypass_register_consumer
+Tracing 1 functions for "irq_bypass_register_consumer"... Hit Ctrl-C to end.
+^C
+     nsecs               : count     distribution
+         0 -> 1          : 0        |                                        |
+         2 -> 3          : 0        |                                        |
+         4 -> 7          : 0        |                                        |
+         8 -> 15         : 0        |                                        |
+        16 -> 31         : 0        |                                        |
+        32 -> 63         : 0        |                                        |
+        64 -> 127        : 0        |                                        |
+       128 -> 255        : 0        |                                        |
+       256 -> 511        : 0        |                                        |
+       512 -> 1023       : 0        |                                        |
+      1024 -> 2047       : 0        |                                        |
+      2048 -> 4095       : 0        |                                        |
+      4096 -> 8191       : 0        |                                        |
+      8192 -> 16383      : 0        |                                        |
+     16384 -> 32767      : 0        |                                        |
+     32768 -> 65535      : 0        |                                        |
+     65536 -> 131071     : 0        |                                        |
+    131072 -> 262143     : 0        |                                        |
+    262144 -> 524287     : 9264     |****************************************|
+    524288 -> 1048575    : 6041     |**************************              |
+   1048576 -> 2097151    : 8617     |*************************************   |
+   2097152 -> 4194303    : 4063     |*****************                       |
+   4194304 -> 8388607    : 2015     |********                                |
+
+avg = 1405199 nsecs, total: 42155988529 nsecs, count: 30000
+
+Detaching...
+[root@TENCENT64 ~]# 
+
+
+
+################ trace from another shell
+
+[root@TENCENT64 ~]# /usr/share/bcc/tools/funclatency kvm_vm_create_worker_thread
+Tracing 1 functions for "kvm_vm_create_worker_thread"... Hit Ctrl-C to end.
+^C
+     nsecs               : count     distribution
+         0 -> 1          : 0        |                                        |
+         2 -> 3          : 0        |                                        |
+         4 -> 7          : 0        |                                        |
+         8 -> 15         : 0        |                                        |
+        16 -> 31         : 0        |                                        |
+        32 -> 63         : 0        |                                        |
+        64 -> 127        : 0        |                                        |
+       128 -> 255        : 0        |                                        |
+       256 -> 511        : 0        |                                        |
+       512 -> 1023       : 0        |                                        |
+      1024 -> 2047       : 0        |                                        |
+      2048 -> 4095       : 0        |                                        |
+      4096 -> 8191       : 0        |                                        |
+      8192 -> 16383      : 0        |                                        |
+     16384 -> 32767      : 0        |                                        |
+     32768 -> 65535      : 985      |****************************************|
+     65536 -> 131071     : 735      |*****************************           |
+    131072 -> 262143     : 103      |****                                    |
+    262144 -> 524287     : 30       |*                                       |
+    524288 -> 1048575    : 0        |                                        |
+   1048576 -> 2097151    : 1        |                                        |
+   2097152 -> 4194303    : 6        |                                        |
+   4194304 -> 8388607    : 33       |*                                       |
+   8388608 -> 16777215   : 103      |****                                    |
+  16777216 -> 33554431   : 4        |                                        |
+
+avg = 814598 nsecs, total: 1629196464 nsecs, count: 2000
+
+Detaching...
+[root@TENCENT64 ~]#
+ 
