@@ -1,0 +1,577 @@
+crash> struct srcu_data.srcu_lock_count,srcu_unlock_count 0x5fff9ac17800:a
+[0]: ffffe8bee8217800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[1]: ffffe8bee8257800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[2]: ffffe8bee8297800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[3]: ffffe8bee82d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[4]: ffffe8bee8317800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[5]: ffffe8bee8357800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[6]: ffffe8bee8397800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[7]: ffffe8bee83d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[8]: ffffe8bee8417800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[9]: ffffe8bee8457800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[10]: ffffe8bee8497800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[11]: ffffe8bee84d7800
+  srcu_lock_count = {2, 1}
+  srcu_unlock_count = {2, 1}
+[12]: ffffe8bee8517800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[13]: ffffe8bee8557800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[14]: ffffe8bee8597800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[15]: ffffe8bee85d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[16]: ffffe8bee8617800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[17]: ffffe8bee8657800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[18]: ffffe8bee8697800
+  srcu_lock_count = {2, 1}
+  srcu_unlock_count = {2, 1}
+[19]: ffffe8bee86d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[20]: ffffe8bee8717800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[21]: ffffe8bee8757800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[22]: ffffe8bee8797800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[23]: ffffe8bee87d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[24]: ffffe8bee8817800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[25]: ffffe8bee8857800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[26]: ffffe8bee8897800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[27]: ffffe8bee88d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[28]: ffffe8bee8917800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[29]: ffffe8bee8957800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[30]: ffffe8bee8997800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[31]: ffffe8bee89d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[32]: ffffe8bee8a17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[33]: ffffe8bee8a57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[34]: ffffe8bee8a97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[35]: ffffe8bee8ad7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[36]: ffffe8bee8b17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[37]: ffffe8bee8b57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[38]: ffffe8bee8b97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[39]: ffffe8bee8bd7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[40]: ffffe8bee8c17800
+  srcu_lock_count = {0, 9}
+  srcu_unlock_count = {0, 9}
+[41]: ffffe8bee8c57800
+  srcu_lock_count = {1, 652}
+  srcu_unlock_count = {1, 652}
+[42]: ffffe8bee8c97800
+  srcu_lock_count = {0, 179}
+  srcu_unlock_count = {0, 179}
+[43]: ffffe8bee8cd7800
+  srcu_lock_count = {4, 5}
+  srcu_unlock_count = {4, 5}
+[44]: ffffe8bee8d17800
+  srcu_lock_count = {14, 16}
+  srcu_unlock_count = {14, 16}
+[45]: ffffe8bee8d57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[46]: ffffe8bee8d97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[47]: ffffe8bee8dd7800
+  srcu_lock_count = {0, 1}
+  srcu_unlock_count = {0, 1}
+[48]: ffffe8fee8e17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[49]: ffffe8fee8e57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[50]: ffffe8fee8e97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[51]: ffffe8fee8ed7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[52]: ffffe8fee8f17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[53]: ffffe8fee8f57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[54]: ffffe8fee8f97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[55]: ffffe8fee8fd7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[56]: ffffe8fee9017800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[57]: ffffe8fee9057800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[58]: ffffe8fee9097800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[59]: ffffe8fee90d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[60]: ffffe8fee9117800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[61]: ffffe8fee9157800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[62]: ffffe8fee9197800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[63]: ffffe8fee91d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[64]: ffffe8fee9217800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[65]: ffffe8fee9257800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[66]: ffffe8fee9297800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[67]: ffffe8fee92d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[68]: ffffe8fee9317800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[69]: ffffe8fee9357800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[70]: ffffe8fee9397800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[71]: ffffe8fee93d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[72]: ffffe8fee9417800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[73]: ffffe8fee9457800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[74]: ffffe8fee9497800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[75]: ffffe8fee94d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[76]: ffffe8fee9517800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[77]: ffffe8fee9557800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[78]: ffffe8fee9597800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[79]: ffffe8fee95d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[80]: ffffe8fee9617800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[81]: ffffe8fee9657800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[82]: ffffe8fee9697800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[83]: ffffe8fee96d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[84]: ffffe8fee9717800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[85]: ffffe8fee9757800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[86]: ffffe8fee9797800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[87]: ffffe8fee97d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[88]: ffffe8fee9817800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[89]: ffffe8fee9857800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[90]: ffffe8fee9897800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[91]: ffffe8fee98d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[92]: ffffe8fee9917800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[93]: ffffe8fee9957800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[94]: ffffe8fee9997800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[95]: ffffe8fee99d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[96]: ffffe8bee8e17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[97]: ffffe8bee8e57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[98]: ffffe8bee8e97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[99]: ffffe8bee8ed7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[100]: ffffe8bee8f17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[101]: ffffe8bee8f57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[102]: ffffe8bee8f97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[103]: ffffe8bee8fd7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[104]: ffffe8bee9017800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[105]: ffffe8bee9057800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[106]: ffffe8bee9097800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[107]: ffffe8bee90d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[108]: ffffe8bee9117800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[109]: ffffe8bee9157800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[110]: ffffe8bee9197800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[111]: ffffe8bee91d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[112]: ffffe8bee9217800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[113]: ffffe8bee9257800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[114]: ffffe8bee9297800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[115]: ffffe8bee92d7800
+  srcu_lock_count = {2, 0}
+  srcu_unlock_count = {2, 0}
+[116]: ffffe8bee9317800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[117]: ffffe8bee9357800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[118]: ffffe8bee9397800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[119]: ffffe8bee93d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[120]: ffffe8bee9417800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[121]: ffffe8bee9457800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[122]: ffffe8bee9497800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[123]: ffffe8bee94d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[124]: ffffe8bee9517800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[125]: ffffe8bee9557800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[126]: ffffe8bee9597800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[127]: ffffe8bee95d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[128]: ffffe8bee9617800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[129]: ffffe8bee9657800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[130]: ffffe8bee9697800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[131]: ffffe8bee96d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[132]: ffffe8bee9717800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[133]: ffffe8bee9757800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[134]: ffffe8bee9797800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[135]: ffffe8bee97d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[136]: ffffe8bee9817800
+  srcu_lock_count = {3, 1710}
+  srcu_unlock_count = {3, 1710}
+[137]: ffffe8bee9857800
+  srcu_lock_count = {13, 286}
+  srcu_unlock_count = {13, 286}
+[138]: ffffe8bee9897800
+  srcu_lock_count = {42, 196}
+  srcu_unlock_count = {42, 196}
+[139]: ffffe8bee98d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[140]: ffffe8bee9917800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[141]: ffffe8bee9957800
+  srcu_lock_count = {3, 0}
+  srcu_unlock_count = {3, 0}
+[142]: ffffe8bee9997800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[143]: ffffe8bee99d7800
+  srcu_lock_count = {0, 3}
+  srcu_unlock_count = {0, 3}
+[144]: ffffe8fee9a17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[145]: ffffe8fee9a57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[146]: ffffe8fee9a97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[147]: ffffe8fee9ad7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[148]: ffffe8fee9b17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[149]: ffffe8fee9b57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[150]: ffffe8fee9b97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[151]: ffffe8fee9bd7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[152]: ffffe8fee9c17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[153]: ffffe8fee9c57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[154]: ffffe8fee9c97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[155]: ffffe8fee9cd7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[156]: ffffe8fee9d17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[157]: ffffe8fee9d57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[158]: ffffe8fee9d97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[159]: ffffe8fee9dd7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[160]: ffffe8fee9e17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[161]: ffffe8fee9e57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[162]: ffffe8fee9e97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[163]: ffffe8fee9ed7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[164]: ffffe8fee9f17800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[165]: ffffe8fee9f57800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[166]: ffffe8fee9f97800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[167]: ffffe8fee9fd7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[168]: ffffe8feea017800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[169]: ffffe8feea057800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[170]: ffffe8feea097800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[171]: ffffe8feea0d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[172]: ffffe8feea117800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[173]: ffffe8feea157800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[174]: ffffe8feea197800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[175]: ffffe8feea1d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[176]: ffffe8feea217800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[177]: ffffe8feea257800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[178]: ffffe8feea297800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[179]: ffffe8feea2d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[180]: ffffe8feea317800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[181]: ffffe8feea357800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[182]: ffffe8feea397800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[183]: ffffe8feea3d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[184]: ffffe8feea417800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[185]: ffffe8feea457800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[186]: ffffe8feea497800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[187]: ffffe8feea4d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[188]: ffffe8feea517800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[189]: ffffe8feea557800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[190]: ffffe8feea597800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}
+[191]: ffffe8feea5d7800
+  srcu_lock_count = {0, 0}
+  srcu_unlock_count = {0, 0}

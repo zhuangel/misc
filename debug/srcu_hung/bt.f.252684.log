@@ -1,0 +1,66 @@
+crash> bt -f 252684
+PID: 252684  TASK: ffff88b0c7da0000  CPU: 136  COMMAND: "kworker/136:12"
+ #0 [ffffc900e8413c28] __schedule at ffffffff81ce856e 
+    ffffc900e8413c30: ffff88bf1f2428c0 ffff88bf4ec2edc0 
+    ffffc900e8413c40: 0000000000000000 ffff88bf4ec2edc0 
+    ffffc900e8413c50: ffffc900e8413ca8 ffffffff81ce856e 
+    ffffc900e8413c60: 0000000064cb5180 ffffc900e8413d20 
+    ffffc900e8413c70: ffffc90000000004 91e3470a130b2600 
+    ffffc900e8413c80: ffff88b0c7da0000 ffffc900e8413de0 
+    ffffc900e8413c90: 7fffffffffffffff ffffc900e8413d80 
+    ffffc900e8413ca0: ffffc900e8413df0 ffffc900e8413cc0 
+    ffffc900e8413cb0: ffffffff81ce8913 
+ #1 [ffffc900e8413cb0] schedule at ffffffff81ce8913 
+    ffffc900e8413cb8: ffffc900e8413de8 ffffc900e8413d58 
+    ffffc900e8413cc8: ffffffff81cec504 
+ #2 [ffffc900e8413cc8] schedule_timeout at ffffffff81cec504 
+    ffffc900e8413cd0: 7fffffffffffffff 0000000000000088 
+    ffffc900e8413ce0: 0000000000000000 ffff88bf4ec2ee40 
+    ffffc900e8413cf0: ffff88b75ffd00c0 000b2b6e7d1deeb1 
+    ffffc900e8413d00: 0000000000000001 0000000000000000 
+    ffffc900e8413d10: ffffc900e8413d50 ffffffff810c30a2 
+    ffffc900e8413d20: ffffffff810b3d0f 91e3470a130b2600 
+    ffffc900e8413d30: ffffc900e8413de8 ffffc900e8413de0 
+    ffffc900e8413d40: 7fffffffffffffff ffffc900e8413d80 
+    ffffc900e8413d50: ffffc900e8413df0 ffffc900e8413dc0 
+    ffffc900e8413d60: ffffffff81ce9379 
+ #3 [ffffc900e8413d60] wait_for_completion at ffffffff81ce9379 
+    ffffc900e8413d68: 0000000000000001 ffff88b0c7da0000 
+    ffffc900e8413d78: ffffffff810b8130 ffffc900e8413df0 
+    ffffc900e8413d88: ffffc900e8413df0 91e3470a130b2600 
+    ffffc900e8413d98: 0000000000000001 ffffc900f100e878 
+    ffffc900e8413da8: ffffe8bfff014d00 0000000000000000 
+    ffffc900e8413db8: ffff88bf4ec2e6c0 ffffc900e8413e28 
+    ffffc900e8413dc8: ffffffff81102931 
+ #4 [ffffc900e8413dc8] __synchronize_srcu at ffffffff81102931 
+    ffffc900e8413dd0: 0000000000000000 ffffffff81101570 
+    ffffc900e8413de0: ffffffff00000000 ffff88b000000000 
+    ffffc900e8413df0: ffffc900e8413d80 ffffc900e8413d80 
+    ffffc900e8413e00: ffff88bf1f244d40 91e3470a130b2600 
+    ffffc900e8413e10: ffffc900e8413e50 ffffc900f100e878 
+    ffffc900e8413e20: 0000000000000246 ffffc900e8413e48 
+    ffffc900e8413e30: ffffffff811029ef 
+ #5 [ffffc900e8413e30] synchronize_srcu at ffffffff811029ef 
+    ffffc900e8413e38: ffff889f053224f0 ffff889f05322400 
+    ffffc900e8413e48: ffffc900e8413e78 ffffffffa08f418c 
+    ffffc900e8413e58: ffffffff81ce8576 
+ #6 [ffffc900e8413e58] __schedule at ffffffff81ce8576 
+    ffffc900e8413e60: 91e3470a130b2600 ffff889f053224f0 
+    ffffc900e8413e70: ffff88a253cadd40 ffffc900e8413ec0 
+    ffffc900e8413e80: ffffffff8109f85a 000000094ec2e6c0 
+    ffffc900e8413e90: ffff889f053224f8 ffff88bf4ec2e6c0 
+    ffffc900e8413ea0: ffff88bf4ec2e6c0 ffff88a253cadd68 
+    ffffc900e8413eb0: ffff88bf4ec2e6e0 ffff88a253cadd40 
+    ffffc900e8413ec0: ffffc900e8413f00 ffffffff8109fa97 
+ #7 [ffffc900e8413ec8] worker_thread at ffffffff8109fa97 
+    ffffc900e8413ed0: ffffc900e8413f00 ffff88b264edc4e0 
+    ffffc900e8413ee0: ffff88f5cfef35c0 ffffc900f0c7fdb0 
+    ffffc900e8413ef0: ffff88a253cadd40 ffff88b0c7da0000 
+    ffffc900e8413f00: ffffc900e8413f48 ffffffff810a58f7 
+ #8 [ffffc900e8413f08] kthread at ffffffff810a58f7 
+    ffffc900e8413f10: ffff88b264edc518 ffffffff8109fa60 
+    ffffc900e8413f20: ffffffff810a57e0 ffff88f5cfef35c0 
+    ffffc900e8413f30: 0000000000000000 0000000000000000 
+    ffffc900e8413f40: 0000000000000000 0000000000000000 
+    ffffc900e8413f50: ffffffff81e001cf 
+ #9 [ffffc900e8413f50] ret_from_fork at ffffffff81e001cf 

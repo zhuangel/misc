@@ -1,0 +1,104 @@
+crash> bt -f 398730
+PID: 398730  TASK: ffff889ed0ead180  CPU: 17  COMMAND: "vcpu0"
+ #0 [ffffc900ee9a3a58] __schedule at ffffffff81ce856e 
+    ffffc900ee9a3a60: ffff88bf469c0000 ffff88bf4da6edc0 
+    ffffc900ee9a3a70: 0000000000000000 ffff88bf4da6edc0 
+    ffffc900ee9a3a80: ffffc900ee9a3ad8 ffffffff81ce856e 
+    ffffc900ee9a3a90: 000000004da6ee40 ffffc900ee9a3ae8 
+    ffffc900ee9a3aa0: ffffffff00000004 4b247f40c170eb00 
+    ffffc900ee9a3ab0: ffff889ed0ead180 ffffc900ee9a3c38 
+    ffffc900ee9a3ac0: 7fffffffffffffff ffffc900ee9a3bb0 
+    ffffc900ee9a3ad0: ffffc900ee9a3c48 ffffc900ee9a3af0 
+    ffffc900ee9a3ae0: ffffffff81ce8913 
+ #1 [ffffc900ee9a3ae0] schedule at ffffffff81ce8913 
+    ffffc900ee9a3ae8: ffffc900ee9a3c40 ffffc900ee9a3b88 
+    ffffc900ee9a3af8: ffffffff81cec504 
+ #2 [ffffc900ee9a3af8] schedule_timeout at ffffffff81cec504 
+    ffffc900ee9a3b00: 7fffffffffffffff 0000000000000011 
+    ffffc900ee9a3b10: ffff889ae2a62480 ffff889ed0ead180 
+    ffffc900ee9a3b20: ffffc900ee9a3b60 ffffc900ee9a3b60 
+    ffffc900ee9a3b30: ffffffff810b3f02 ffff88bf316b7020 
+    ffffc900ee9a3b40: ffffc900ee9a3b50 ffffffff81ce8be9 
+    ffffc900ee9a3b50: ffffc900ee9a3bc8 4b247f40c170eb00 
+    ffffc900ee9a3b60: ffffc900ee9a3c40 ffffc900ee9a3c38 
+    ffffc900ee9a3b70: 7fffffffffffffff ffffc900ee9a3bb0 
+    ffffc900ee9a3b80: ffffc900ee9a3c48 ffffc900ee9a3bf0 
+    ffffc900ee9a3b90: ffffffff81ce9379 
+ #3 [ffffc900ee9a3b90] wait_for_completion at ffffffff81ce9379 
+    ffffc900ee9a3b98: 0000000000000001 ffff889ed0ead180 
+    ffffc900ee9a3ba8: ffffffff810b8130 ffffc900ee9a3c48 
+    ffffc900ee9a3bb8: ffffc900ee9a3c48 4b247f40c170eb00 
+    ffffc900ee9a3bc8: ffff88bf316b7000 ffffc900f2027c20 
+    ffffc900ee9a3bd8: ffff88a8418df800 0000000000000000 
+    ffffc900ee9a3be8: ffffc900ee9a3c20 ffffc900ee9a3c88 
+    ffffc900ee9a3bf8: ffffffff8109e46d 
+ #4 [ffffc900ee9a3bf8] flush_workqueue at ffffffff8109e46d 
+    ffffc900ee9a3c00: ffffc900ee9a3c50 ffff88bf316b7058 
+    ffffc900ee9a3c10: ffff88bf316b7020 ffff88bf316b7068 
+    ffffc900ee9a3c20: ffffc900f1a3bc20 ffffc900f2027c20 
+    ffffc900ee9a3c30: ffff88bd00000006 ffffc90000000000 
+    ffffc900ee9a3c40: ffff88b200000000 ffffc900ee9a3bb0 
+    ffffc900ee9a3c50: ffffc900ee9a3bb0 4b247f40c170eb00 
+    ffffc900ee9a3c60: ffffc900edb859a8 ffffc900ee9a3d50 
+    ffffc900ee9a3c70: ffff88a8418df800 0000000000000000 
+    ffffc900ee9a3c80: ffffc900edb859a0 ffffc900ee9a3d08 
+    ffffc900ee9a3c90: ffffffffa08f449e 
+ #5 [ffffc900ee9a3c90] kvm_irqfd at ffffffffa08f449e  [kvm]
+    ffffc900ee9a3c98: ffffc900ee9a3cc8 0000000000000246 
+    ffffc900ee9a3ca8: ffffc900ee9a3cc8 ffffffffa08d27c8 
+    ffffc900ee9a3cb8: ffff889fdc9c8000 0000000000000001 
+    ffffc900ee9a3cc8: ffffc900ee9a3d18 ffffffffa0908b6a 
+    ffffc900ee9a3cd8: 0000000000000000 000000004020ae76 
+    ffffc900ee9a3ce8: 00007f80291f3600 00007f80291f3600 
+    ffffc900ee9a3cf8: 000000004020ae76 ffffc900edb85000 
+    ffffc900ee9a3d08: ffffc900ee9a3e00 ffffffffa08f2300 
+ #6 [ffffc900ee9a3d10] kvm_vm_ioctl at ffffffffa08f2300  [kvm]
+    ffffc900ee9a3d18: ffffc900ee9a3d30 ffffffffa08ea98b 
+    ffffc900ee9a3d28: ffff889fdc9c8000 ffffc900ee9a3d60 
+    ffffc900ee9a3d38: ffffffffa090e33a 0000000000000000 
+    ffffc900ee9a3d48: 0000000000000000 000000250000002c 
+    ffffc900ee9a3d58: 0000000000000001 0000000000000000 
+    ffffc900ee9a3d68: 0000000000000000 0000000000000000 
+    ffffc900ee9a3d78: ffff889ed0ead180 4b247f40c170eb00 
+    ffffc900ee9a3d88: ffff88b2661acad0 0000000000000000 
+    ffffc900ee9a3d98: 0000000000000000 0000000000000000 
+    ffffc900ee9a3da8: ffff88b57a09ed40 ffffffff831f2030 
+    ffffc900ee9a3db8: 000000007fff0000 ffffc900ee9a3eb8 
+    ffffc900ee9a3dc8: ffffc900ee9a3e98 4b247f40c170eb00 
+    ffffc900ee9a3dd8: ffff88bf42d09900 ffff88b146039a40 
+    ffffc900ee9a3de8: 00007f80291f3600 000000004020ae76 
+    ffffc900ee9a3df8: 00007f80291f3600 ffffc900ee9a3e80 
+    ffffc900ee9a3e08: ffffffff812c3db6 
+ #7 [ffffc900ee9a3e08] do_vfs_ioctl at ffffffff812c3db6 
+    ffffc900ee9a3e10: ffffffff810d6d9b 0000000000000000 
+    ffffc900ee9a3e20: 00000000813099d6 ffff889a7cbb21d0 
+    ffffc900ee9a3e30: 0000000200000001 ffff88bf42d09900 
+    ffffc900ee9a3e40: ffff889e00000002 ffffffff810b8130 
+    ffffc900ee9a3e50: 4b247f40c170eb00 ffff88b146039a41 
+    ffffc900ee9a3e60: 000000000000001a ffff88b146039a40 
+    ffffc900ee9a3e70: 000000004020ae76 00007f80291f3600 
+    ffffc900ee9a3e80: ffffc900ee9a3f18 ffffffff812c4374 
+ #8 [ffffc900ee9a3e88] ksys_ioctl at ffffffff812c4374 
+    ffffc900ee9a3e90: 0000000000000000 ffff88e15051de28 
+    ffffc900ee9a3ea0: 0000000000000010 ffffc900ee9a3f28 
+    ffffc900ee9a3eb0: ffffffff81001f25 c000003e00000010 
+    ffffc900ee9a3ec0: 00007f80302857cb 000000000000001a 
+    ffffc900ee9a3ed0: 000000004020ae76 00007f80291f3600 
+    ffffc900ee9a3ee0: 0000000000000000 4b247f40c170eb00 
+    ffffc900ee9a3ef0: 0000000000000000 ffffc900ee9a3f58 
+    ffffc900ee9a3f00: 0000000000000000 0000000000000000 
+    ffffc900ee9a3f10: 0000000000000000 ffffc900ee9a3f28 
+    ffffc900ee9a3f20: ffffffff812c45ca 
+ #9 [ffffc900ee9a3f20] __x64_sys_ioctl at ffffffff812c45ca 
+    ffffc900ee9a3f28: ffffc900ee9a3f48 ffffffff810025d7 
+#10 [ffffc900ee9a3f30] do_syscall_64 at ffffffff810025d7 
+    ffffc900ee9a3f38: 0000000000000000 0000000000000000 
+    ffffc900ee9a3f48: 0000000000000000 ffffffff81e0008c 
+#11 [ffffc900ee9a3f50] entry_SYSCALL_64_after_hwframe at ffffffff81e0008c 
+    RIP: 00007f80302857cb  RSP: 00007f80291f35f8  RFLAGS: 00000246
+    RAX: ffffffffffffffda  RBX: 00007f80240067c4  RCX: 00007f80302857cb
+    RDX: 00007f80291f3600  RSI: 000000004020ae76  RDI: 000000000000001a
+    RBP: 0000000000000001   R8: 000000000000000c   R9: 0000000000000021
+    R10: 0000000000000000  R11: 0000000000000246  R12: 00007f80240067c4
+    R13: 00007f80291f3718  R14: 0000000000000001  R15: 00007f80291f37b8
+    ORIG_RAX: 0000000000000010  CS: 0033  SS: 002b
