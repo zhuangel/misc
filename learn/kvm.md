@@ -28,3 +28,30 @@
 - describe: host edge irq inject to guest
 - controls: KVM_IRQFD
 - details : edge irq, post interrupt, VFIO phy io dev assign to VM
+
+## async pf
+- describe: 
+- controls:
+- details :
+
+## fast pf
+- describe: access tracking or write-protect on spte present.
+- controls: none
+- details : avoid mmu-lock
+
+## mmio pf
+- describe: ept misconfiguration
+- controls:
+- details :
+
+## abnormal pf
+- describe: bad page or mmio page(no slot)
+- controls: no
+- details :
+
+## page fault
+- handle_mmio_page_fault,tdp_page_fault
+- tdp_page_fault, page_fault_handle_page_track,fast_page_fault,try_async_pf,handle_abnormal_pfn,__direct_map
+- try_async_pf, __gfn_to_pfn_memslot,kvm_arch_setup_async_pf,__gfn_to_pfn_memslot
+- __direct_map, mmu_set_spte,direct_pte_prefetch
+- 
